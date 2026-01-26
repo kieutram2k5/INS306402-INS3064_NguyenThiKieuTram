@@ -1,0 +1,13 @@
+File has .php extension and correct location        2/2
+PHP opening tag (<?php) present                    2/2
+PHP closing tag (?>) present                       2/2
+Variable assignments for required fields           3/3
+At least 4 echo statements                         3/3
+date() function for current date                   2/2
+date() function for current time                   2/2
+At least one comment line                          2/2
+All statements end with semicolon                  3/3
+Readable code with proper indentation              2/2
+No PHP errors when running                         3/3
+Professional output appearance                    3/3
+TOTAL SCORE                                        29/30
