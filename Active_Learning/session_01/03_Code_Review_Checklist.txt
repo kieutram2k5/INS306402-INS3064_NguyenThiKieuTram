@@ -10,4 +10,4 @@ All statements end with semicolon                  3/3
 Readable code with proper indentation              2/2
 No PHP errors when running                         3/3
 Professional output appearance                    3/3
-TOTAL SCORE                                        29/30
+TOTAL SCORE                                        30/30
