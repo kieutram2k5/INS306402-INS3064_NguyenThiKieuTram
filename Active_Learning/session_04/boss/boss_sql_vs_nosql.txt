@@ -1,0 +1,44 @@
+Boss Fight: SQL vs NoSQL Decision
+
+Scenario 1: High-Velocity Social Media Feed
+
+Chosen Model: NoSQL
+
+Reasons:
+
+1. Horizontal Scalability
+   Social media feeds generate extremely large volumes of data and traffic. NoSQL databases are designed to scale horizontally across many servers, allowing platforms to handle millions of users and high write/read throughput efficiently.
+
+2. Schema Flexibility
+   User-generated content such as posts, images, comments, reactions, and metadata can vary significantly. NoSQL databases support flexible schemas, which makes it easier to store and evolve diverse content structures without frequent schema migrations.
+
+3. High Performance for Distributed Systems
+   NoSQL systems like document or key-value databases are optimized for fast reads and writes. This makes them ideal for real-time feeds where users constantly post and retrieve data.
+
+4. Eventual Consistency Acceptable
+   In social media applications, slight delays in synchronization are usually acceptable. NoSQL systems often use eventual consistency models that prioritize performance and availability.
+
+
+Scenario 2: Secure Bank Ledger
+
+Chosen Model: SQL (Relational Database)
+
+Reasons:
+
+1. ACID Transactions
+   Banking systems require strict ACID (Atomicity, Consistency, Isolation, Durability) guarantees to ensure that financial transactions are processed safely and accurately.
+
+2. Data Integrity and Relationships
+   Financial data contains strong relationships between accounts, transactions, and customers. SQL databases enforce constraints, foreign keys, and referential integrity to maintain correct data relationships.
+
+3. Reliability and Consistency
+   In banking, every transaction must be consistent and reliable. SQL databases prioritize strong consistency, ensuring that balances and financial records remain accurate at all times.
+
+4. Structured Schema Control
+   Banking systems use well-defined and stable schemas. Relational databases enforce strict schemas that help maintain data quality and prevent invalid records.
+
+
+Conclusion
+
+NoSQL is more suitable for large-scale, high-speed, flexible applications like social media platforms.
+SQL databases are better suited for systems that require strong consistency, strict data integrity, and reliable transactions such as banking systems.
