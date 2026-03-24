@@ -1,49 +1,23 @@
-<?php
-session_start();
-
-if(!isset($_SESSION["user"])){
-header("Location: login.php");
-exit;
-}
-
-$users=json_decode(file_get_contents("data/users.json"),true);
-
-$current=$_SESSION["user"];
-
-foreach($users as $user){
-
-if($user["username"]==$current){
-
-$bio=$user["bio"];
-$avatar=$user["avatar"];
-
-}
-
-}
-?>
-
-<link rel="stylesheet" href="style.css">
-
 <div class="container">
 
-<h2>Dashboard</h2>
+<div class="card">
 
-<p>Welcome <?php echo $current; ?></p>
+<h1>Welcome to UserHub 👋</h1>
 
-<p><?php echo htmlspecialchars($bio); ?></p>
+<p>Hello, <b><?=$_SESSION['user']?></b>! Ready to manage your profile?</p>
 
-<?php
-if($avatar){
-echo "<img class='avatar' src='$avatar'>";
-}
-?>
+<div class="btn-group">
 
-<br><br>
+<a href="index.php?page=profile">
+<button class="btn btn-primary">Go to My Profile</button>
+</a>
 
-<a href="profile.php">Edit Profile</a>
+<a href="index.php?page=logout">
+<button class="btn btn-outline">Logout</button>
+</a>
 
-<br><br>
+</div>
 
-<a href="logout.php">Logout</a>
+</div>
 
 </div>

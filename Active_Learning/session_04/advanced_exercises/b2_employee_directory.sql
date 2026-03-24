@@ -12,3 +12,4 @@ CREATE TABLE employees (
     hire_date DATE NOT NULL,
     salary DECIMAL(15,2) NOT NULL
 );
+
